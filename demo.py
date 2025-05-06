@@ -27,3 +27,5 @@ signup_btn_submit=WebDriverWait(driver,10).until(
     EC.element_to_be_clickable((By.XPATH,"234"))
 )
 signup_btn_submit.click()
+
+# Day-2 update test
