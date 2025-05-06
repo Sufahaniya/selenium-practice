@@ -19,7 +19,7 @@ signup_btn.click()
 time.sleep(3)
 print("signup button clicked successfully!")
 
-# step 3 : 
+# step 3 : fill the form automatically
 driver.find_elements(By.ID,"user_name").send_keys("haniya")
 driver.find_elements(By.ID,"password").send_keys("12345")
 
