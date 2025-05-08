@@ -28,4 +28,22 @@ signup_btn_submit=WebDriverWait(driver,10).until(
 )
 signup_btn_submit.click()
 
-# Day-2 update test
+# step 4: navigation to home page 
+
+WebDriverWait(driver,10).until(
+    EC.url_changes(driver.current_url)
+)
+
+# step 8:
+WebDriverWait(driver,10).until(
+    EC.presence_of_all_elements_located(By.ID,"search Box")
+)
+time.sleep(2)
+
+search_box = WebDriverWait(driver,10).until(
+    EC.element_to_be_clickable(By.ID,"searchBox")
+)
+search_box.click()
+print("Search Button clidkedd Successfully!")
+
+time.sleep(2)
