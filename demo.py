@@ -46,4 +46,4 @@ search_box = WebDriverWait(driver,10).until(
 search_box.click()
 print("Search Button clidkedd Successfully!")
 
-time.sleep(2)
+time.sleep(2) 
